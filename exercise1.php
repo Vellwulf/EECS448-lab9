@@ -13,7 +13,7 @@
 	echo "<td> </td>";
   
 	for ($x = 1; $x <= 100; $x++)
-		echo "<th>$x</th>";
+		echo "<td><b>$x</b></td>";
   
 	echo "</tr>";
   
