@@ -21,6 +21,7 @@
 	}
 	
 	$totalCorrect = countTotalCorrect($userAnswers, $ansKey);
+	$score = $totalCorrect / count($ansKey) * 100;
 ?>
 
 	Question 1: Armadillos keep ___<br>
@@ -43,6 +44,7 @@
 	<p class="answer">Your answer: <?php echo $userAnswers[4]; ?></p>
 	<p class="answer">Correct answer: <?php echo $ansKey[4]; ?></p><br>
 	
-	You answered <?php echo $totalCorrect ?>/5 questions correctly!<br>
+	You answered <?php echo $totalCorrect . "/" . count($ansKey) ?> questions correctly!<br>
+	Score: <?php echo $score; ?>%
 </body>
 </html>
