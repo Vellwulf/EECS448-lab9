@@ -29,6 +29,13 @@
 			<td><?php echo "$" . $jellyPrice; ?></td>
 			<td><?php echo "$" . ($jellyNum * $jellyPrice); ?></td>
 		</tr>
+		<tr>
+			<th>Trip Jinx</th>
+			<td><?php echo $tripNum; ?></td>
+			<td><?php echo "$" . $jellyPrice; ?></td>
+			<td><?php echo "$" . ($tripNum * $tripPrice); ?></td>
+		</tr>
+		
 	</table>
 </body>
 </html>
