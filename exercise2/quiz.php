@@ -6,8 +6,8 @@
 </style>
 <body>
 <?php 
-	$userAnswers = array($_POST["q1Ans"], $_POST["q2Ans"], $_POST["q3Ans"], $_POST["q4Ans"]);
-	$ansKey = array("digging holes in my backyard", "Do you like the show?", "Byron", "It's just not");
+	$userAnswers = array($_POST["q1Ans"], $_POST["q2Ans"], $_POST["q3Ans"], $_POST["q4Ans"], $_POST["q5Ans"]);
+	$ansKey = array("digging holes in my backyard", "Do you like the show?", "Byron", "It's just not", "I just want a picture of a got dang hot dog");
 ?>
 
 	Question 1: Armadillos keep ___<br>
@@ -25,5 +25,9 @@
 	Question 4: Why isn't it possible?<br>
 	<p class="answer">Your answer: <?php echo $userAnswers[3]; ?></p>
 	<p class="answer">Correct answer: <?php echo $ansKey[3]; ?></p><br>
+	
+	Question 5: Do I look like I know what a JPEG is?<br>
+	<p class="answer">Your answer: <?php echo $userAnswers[4]; ?></p>
+	<p class="answer">Correct answer: <?php echo $ansKey[4]; ?></p><br>
 </body>
 </html>
