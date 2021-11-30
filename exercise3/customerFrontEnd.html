@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
+<script src="formChecker.js"></script>
 <body>
 	<h1>Welcome to the Store of Curses!</h1>
 	
-	<form action="customerBackEnd.php" method="post">
+	<form action="customerBackEnd.php" method="post" onsubmit="validate()">
 		<h2>Please enter the quantity of curses you would like to buy:</h2>
 		
 		<label for="jelly-legs">Jelly-Legs Curse: 5$ per</label><br>
