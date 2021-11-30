@@ -8,6 +8,19 @@
 <?php 
 	$userAnswers = array($_POST["q1Ans"], $_POST["q2Ans"], $_POST["q3Ans"], $_POST["q4Ans"], $_POST["q5Ans"]);
 	$ansKey = array("digging holes in my backyard", "Do you like the show?", "Byron", "It's just not", "I just want a picture of a got dang hot dog");
+	
+	function countTotalCorrect($inputs, $answers) {
+		$n = 0;
+		
+		for ($i = 0; $i < 5; $i++) {
+			if ($inputs[$i] == $answers[$i])
+				$n++;
+		}
+		
+		return $n;
+	}
+	
+	$totalCorrect = countTotalCorrect($userAnswers, $ansKey);
 ?>
 
 	Question 1: Armadillos keep ___<br>
@@ -29,5 +42,7 @@
 	Question 5: Do I look like I know what a JPEG is?<br>
 	<p class="answer">Your answer: <?php echo $userAnswers[4]; ?></p>
 	<p class="answer">Correct answer: <?php echo $ansKey[4]; ?></p><br>
+	
+	You answered <?php echo $totalCorrect ?>/5 questions correctly!<br>
 </body>
 </html>
