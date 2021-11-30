@@ -19,6 +19,14 @@
 		$shipMethod = $_POST["shipSelect"];
 		
 		$totalPrice = $jellyTotal + $tripTotal + $pepperTotal + $shipPrices[$shipMethod];
+		
+		$pass = $_POST["pass"];
+		$username = $_POST["username"];
+		
+		echo "<h2>Welcome, " . $username . "!</h2>";
+		echo "The password you entered was: " . $pass;
+		echo "<br>Your receipt is below. Have a great day!";
+		
 	?>
 	
 	<table>
