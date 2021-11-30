@@ -2,7 +2,7 @@
 <body>
 	<?php
 		//shipping prices in dollars
-		$shipPrices = array("free"=>0, "3-day"=>50, "overnight"=>5);
+		$shipPrices = array("free"=>0, "3-day"=>5, "overnight"=>50);
 		
 		$jellyNum = $_POST["jelly-legs"];
 		$jellyPrice = 5.00;
@@ -35,7 +35,17 @@
 			<td><?php echo "$" . $jellyPrice; ?></td>
 			<td><?php echo "$" . ($tripNum * $tripPrice); ?></td>
 		</tr>
-		
+		<tr>
+			<th>Pepper Breath</th>
+			<td><?php echo $pepperNum; ?></td>
+			<td><?php echo "$" . $pepperPrice; ?></td>
+			<td><?php echo "$" . ($pepperNum * $pepperPrice); ?></td>
+		</tr>
+		<tr>
+			<th>Shipping</th>
+			<td><?php echo $shipMethod; ?></td>
+			<td></td>
+			<td><?php echo "$" . $shipPrices[$shipMethod]; ?></td>
 	</table>
 </body>
 </html>
