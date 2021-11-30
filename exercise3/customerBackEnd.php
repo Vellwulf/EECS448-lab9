@@ -17,6 +17,8 @@
 		$pepperTotal = $pepperNum * $pepperPrice;
 		
 		$shipMethod = $_POST["shipSelect"];
+		
+		$totalPrice = $jellyTotal + $tripTotal + $pepperTotal + $shipPrices[$shipMethod];
 	?>
 	
 	<table>
@@ -49,6 +51,13 @@
 			<td><?php echo $shipMethod; ?></td>
 			<td></td>
 			<td><?php echo "$" . $shipPrices[$shipMethod]; ?></td>
+		</tr>
+		<tr>
+			<th>Total Price</th>
+			<td></td>
+			<td></td>
+			<td><?php echo "$" . $totalPrice; ?></td>
+		</tr>
 	</table>
 </body>
 </html>
