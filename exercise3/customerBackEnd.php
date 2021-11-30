@@ -1,12 +1,34 @@
 <html>
 <body>
 	<?php
-		$jellyNum = $_POST["jelly-legs"];
-		$tripNum = $_POST["trip"];
-		$pepperNum = $_POST["pepper-breath"];
-		$shipMethod = $_POST["shipSelect"];
+		//shipping prices in dollars
+		$shipPrices = array("free"=>0, "3-day"=>50, "overnight"=>5);
 		
-		echo "jelly: " . $jellyNum;
+		$jellyNum = $_POST["jelly-legs"];
+		$jellyPrice = 5.00;
+		
+		$tripNum = $_POST["trip"];
+		$tripPrice = 5.00;
+		
+		$pepperNum = $_POST["pepper-breath"];
+		$pepperPrice = 10.00;
+		
+		$shipMethod = $_POST["shipSelect"];
 	?>
+	
+	<table>
+		<tr>
+			<th> </th>
+			<th>Quantity</th>
+			<th>Cost per Item</th>
+			<th>Sub total</th>
+		</tr>
+		<tr>
+			<th>Jelly Legs</th>
+			<td><?php echo $jellyNum; ?></td>
+			<td><?php echo "$" . $jellyPrice; ?></td>
+			<td><?php echo "$" . ($jellyNum * $jellyPrice); ?></td>
+		</tr>
+	</table>
 </body>
 </html>
