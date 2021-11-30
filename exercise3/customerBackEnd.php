@@ -6,12 +6,15 @@
 		
 		$jellyNum = $_POST["jelly-legs"];
 		$jellyPrice = 5.00;
+		$jellyTotal = $jellyNum * $jellyPrice;
 		
 		$tripNum = $_POST["trip"];
 		$tripPrice = 5.00;
+		$tripTotal = $tripNum * $tripPrice;
 		
 		$pepperNum = $_POST["pepper-breath"];
 		$pepperPrice = 10.00;
+		$pepperTotal = $pepperNum * $pepperPrice;
 		
 		$shipMethod = $_POST["shipSelect"];
 	?>
@@ -27,19 +30,19 @@
 			<th>Jelly Legs</th>
 			<td><?php echo $jellyNum; ?></td>
 			<td><?php echo "$" . $jellyPrice; ?></td>
-			<td><?php echo "$" . ($jellyNum * $jellyPrice); ?></td>
+			<td><?php echo "$" . $jellyTotal; ?></td>
 		</tr>
 		<tr>
 			<th>Trip</th>
 			<td><?php echo $tripNum; ?></td>
 			<td><?php echo "$" . $jellyPrice; ?></td>
-			<td><?php echo "$" . ($tripNum * $tripPrice); ?></td>
+			<td><?php echo "$" . $tripTotal; ?></td>
 		</tr>
 		<tr>
 			<th>Pepper Breath</th>
 			<td><?php echo $pepperNum; ?></td>
 			<td><?php echo "$" . $pepperPrice; ?></td>
-			<td><?php echo "$" . ($pepperNum * $pepperPrice); ?></td>
+			<td><?php echo "$" . $pepperTotal; ?></td>
 		</tr>
 		<tr>
 			<th>Shipping</th>
