@@ -6,8 +6,8 @@
 </style>
 <body>
 <?php 
-	$userAnswers = array($_POST["q1Ans"], $_POST["q2Ans"], $_POST["q3Ans"]);
-	$ansKey = array("digging holes in my backyard", "Do you like the show?", "Byron");
+	$userAnswers = array($_POST["q1Ans"], $_POST["q2Ans"], $_POST["q3Ans"], $_POST["q4Ans"]);
+	$ansKey = array("digging holes in my backyard", "Do you like the show?", "Byron", "It's just not");
 ?>
 
 	Question 1: Armadillos keep ___<br>
@@ -21,5 +21,9 @@
 	Question 3: Who's the president?<br>
 	<p class="answer">Your answer: <?php echo $userAnswers[2]; ?></p>
 	<p class="answer">Correct answer: <?php echo $ansKey[2]; ?></p><br>
+	
+	Question 4: Why isn't it possible?<br>
+	<p class="answer">Your answer: <?php echo $userAnswers[3]; ?></p>
+	<p class="answer">Correct answer: <?php echo $ansKey[3]; ?></p><br>
 </body>
 </html>
