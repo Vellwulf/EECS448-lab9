@@ -30,7 +30,7 @@
 			<td><?php echo "$" . ($jellyNum * $jellyPrice); ?></td>
 		</tr>
 		<tr>
-			<th>Trip Jinx</th>
+			<th>Trip</th>
 			<td><?php echo $tripNum; ?></td>
 			<td><?php echo "$" . $jellyPrice; ?></td>
 			<td><?php echo "$" . ($tripNum * $tripPrice); ?></td>
