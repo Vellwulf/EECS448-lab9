@@ -43,6 +43,6 @@ input[type=text], input[type=number], input[type=reset], input[type=submit] {
 	margin-top: 2px;
 	border: 1px solid black;
 	border-radius: 4px;
-	height: 20px;
+	height: 25px;
 	background-color: #EEEEEE;
 }
