@@ -15,7 +15,15 @@ function checkQuantity (inputValue) {
 function validate() {
 	let isValid = true;
 	
-	isValid = checkQuantity(document.forms["storeForm"]["jelly-legs"].value);
+	if (!checkQuantity(document.forms["storeForm"]["jelly-legs"].value))
+		isValid = false;
+	
+	if (!checkQuantity(document.forms["storeForm"]["trip"].value))
+		isValid = false;
+	
+	if (!checkQuantity(document.forms["storeForm"]["pepper-breath"].value))
+		isValid = false;
+	
 	alert("isValid = " + isValid);
 	return isValid;
 }
