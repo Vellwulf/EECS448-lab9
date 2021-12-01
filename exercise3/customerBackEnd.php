@@ -26,10 +26,11 @@
 		
 		echo "<h2>Welcome, " . $username . "!</h2>";
 		echo "The password you entered was: " . $pass;
-		echo "<br>Your receipt is below. Have a great day!<br>";
+		echo "<br><br>Your receipt is below. Have a great day!";
 		
 	?>
 	
+	<br>
 	<table>
 		<tr>
 			<th> </th>
