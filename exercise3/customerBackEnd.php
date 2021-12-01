@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="style.css">
 <body>
 	<?php
-		//shipping prices in dollars
 		$shipPrices = array("free 7-day"=>0, "3-day"=>5, "overnight"=>50);
 		
 		$jellyNum = $_POST["jelly-legs"];
@@ -27,19 +26,17 @@
 		echo "<h2>Welcome, " . $username . "!</h2>";
 		echo "The password you entered was: " . $pass;
 		echo "<br><br>Your receipt is below. Have a great day!";
-		
 	?>
 	
-	<br>
 	<table>
 		<tr>
-			<th> </th>
+			<th></th>
 			<th>Quantity</th>
 			<th>Cost per Item</th>
-			<th>Sub total</th>
+			<th>Subtotal</th>
 		</tr>
 		<tr>
-			<th>Jelly Legs</th>
+			<th>Jelly-Legs</th>
 			<td><?php echo $jellyNum; ?></td>
 			<td><?php echo "$" . $jellyPrice; ?></td>
 			<td><?php echo "$" . $jellyTotal; ?></td>
@@ -58,14 +55,11 @@
 		</tr>
 		<tr>
 			<th>Shipping</th>
-			<td><?php echo $shipMethod; ?></td>
-			<td></td>
+			<td colspan="2"><?php echo $shipMethod; ?></td>
 			<td><?php echo "$" . $shipPrices[$shipMethod]; ?></td>
 		</tr>
 		<tr>
-			<th>Total Price</th>
-			<td></td>
-			<td></td>
+			<th colspan="3">Total Price</th>
 			<td><?php echo "$" . $totalPrice; ?></td>
 		</tr>
 	</table>
