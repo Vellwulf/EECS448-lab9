@@ -37,6 +37,15 @@ function checkUsername(username) {
 	return true;
 }
 
+function checkPassword(pass) {
+	if (pass == "") {
+		alert ("Error: password input field must be filled (can be anything).");
+		return false;
+	}
+	
+	return true;
+}
+
 function validate() {
 	let isValid = true;
 	let form = document.forms["storeForm"];
@@ -54,6 +63,9 @@ function validate() {
 		isValid = false;
 	
 	if (!checkUsername(form["username"].value))
+		isValid = false;
+	
+	if (!checkPassword(form["pass"].value))
 		isValid = false;
 	
 	alert("isValid = " + isValid);
