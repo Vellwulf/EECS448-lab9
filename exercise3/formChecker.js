@@ -25,6 +25,8 @@ function checkUsername(username) {
 		alert("Error: an email address must be entered in the username field (ex: name@domain.com)");
 		return false;
 	}
+	
+	return true;
 }
 
 function validate() {
@@ -41,6 +43,9 @@ function validate() {
 		isValid = false;
 	
 	if (!checkShipSelection(form["shipSelect"].value))
+		isValid = false;
+	
+	if (!checkUsername(form["username"].value))
 		isValid = false;
 	
 	alert("isValid = " + isValid);
