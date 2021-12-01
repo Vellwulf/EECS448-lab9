@@ -2,7 +2,7 @@
 <body>
 	<?php
 		//shipping prices in dollars
-		$shipPrices = array("free"=>0, "3-day"=>5, "overnight"=>50);
+		$shipPrices = array("free 7-day"=>0, "3-day"=>5, "overnight"=>50);
 		
 		$jellyNum = $_POST["jelly-legs"];
 		$jellyPrice = 5.00;
