@@ -1,9 +1,11 @@
 <!doctype html>
 <html>
 <script src="formChecker.js"></script>
+<link rel="stylesheet" href="style.css">
 <body>
 	<h1>Welcome to the Store of Curses!</h1>
 	
+	<div class="formSection">
 	<form name="storeForm" action="customerBackEnd.php" method="post" onsubmit="return validate()">
 		<h2>Please enter the quantity of curses you would like to buy:</h2>
 		
@@ -33,4 +35,5 @@
 		<input type="reset" value="Reset Entries"></input>
 		<input type="submit" value="Submit Purchase"></input>
 	</form>
+	</div>
 </html>

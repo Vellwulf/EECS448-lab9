@@ -1,0 +1,20 @@
+body {
+	background: LightBlue;
+}
+
+table, th, td {
+	width: 25%;
+	border: 1px solid black;
+}
+
+th {
+	background: purple;
+}
+
+.formSection {
+	width: 100%;
+	border: 1px solid black;
+	background: LightGreen;
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
