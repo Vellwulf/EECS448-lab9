@@ -11,17 +11,29 @@ function checkQuantity (inputValue) {
 	
 	return true;
 }
+function checkShipSelection (selection) {
+	if (selection == "") {
+		alert ("Error: a shipping method must be selected");
+		return false;
+	}
+	
+	return true;
+}
 
 function validate() {
 	let isValid = true;
+	let form = document.forms["storeForm"];
 	
-	if (!checkQuantity(document.forms["storeForm"]["jelly-legs"].value))
+	if (!checkQuantity(form["jelly-legs"].value))
 		isValid = false;
 	
-	if (!checkQuantity(document.forms["storeForm"]["trip"].value))
+	if (!checkQuantity(form["trip"].value))
 		isValid = false;
 	
-	if (!checkQuantity(document.forms["storeForm"]["pepper-breath"].value))
+	if (!checkQuantity(form["pepper-breath"].value))
+		isValid = false;
+	
+	if (!checkShipSelection(form["shipSelect"].value))
 		isValid = false;
 	
 	alert("isValid = " + isValid);
