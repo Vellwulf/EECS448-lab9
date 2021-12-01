@@ -1,5 +1,11 @@
 body {
 	background: LightBlue;
+	font
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
 }
 
 table, th, td {
@@ -8,13 +14,24 @@ table, th, td {
 }
 
 th {
-	background: purple;
+	background: LightGreen;
+}
+
+td {
+	background: #EA9999;
 }
 
 .formSection {
+	margin: auto;
 	max-width: 500px;
 	border: 1px solid black;
 	background: LightGreen;
 	padding-left: 5px;
 	padding-bottom: 5px;
+}
+
+input[type=text], input[type=number] {
+	border: 1px solid black;
+	border-radius: 4px;
+	height: 20px;
 }
