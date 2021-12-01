@@ -21,8 +21,16 @@ function checkShipSelection (selection) {
 }
 
 function checkUsername(username) {
+	//source for email address format RegEx: https://www.w3resource.com/javascript/form/email-validation.php
+	let format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	
 	if (username == "") {
-		alert("Error: an email address must be entered in the username field (ex: name@domain.com)");
+		alert ("Error: an email address must be entered in the username field (ex: name@domain.com).");
+		return false;
+	}
+	
+	else if (!username.match(format)) {
+		alert ("Error: username must match a valid email address format (ex: name@domain.com).");
 		return false;
 	}
 	
