@@ -67,7 +67,6 @@ function validate() {
 	
 	if (!checkPassword(form["pass"].value))
 		isValid = false;
-	
-	alert("isValid = " + isValid);
+
 	return isValid;
 }
